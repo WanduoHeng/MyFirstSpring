@@ -21,6 +21,8 @@
         <!--<property name="message3" value="Namaste India!"/>-->
     <!--</bean>-->
 
+
+
     <!-- Definition for textEditor bean -->
     <bean id="textEditor" class="com.tutorialspoint.TextEditor">
         <constructor-arg ref="spellChecker"/>
@@ -30,6 +32,13 @@
     <bean id="spellChecker" class="com.tutorialspoint.SpellChecker">
     </bean>
 
+    <bean id = "foo" class="com.tutorialspoint.Foo">
+        <constructor-arg ref = "bar"></constructor-arg>
+        <constructor-arg ref = "baz"></constructor-arg>
+    </bean>
+
+    <bean id = "bar" class="com.tutorialspoint.Bar"></bean>
+    <bean id = "baz" class="com.tutorialspoint.Baz"></bean>
     <!--<bean class="com.tutorialspoint.InitHelloWorld" />-->
 
 
