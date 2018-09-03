@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="helloWorld"-->
+          <!--class="com.tutorialspoint.HelloWorld"-->
+          <!--init-method="init" destroy-method="destroy">-->
+        <!--<property name="message1" value="Hello World!"/>-->
+        <!--<property name="message2" value="Hello Second World!"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="hiWorld"-->
+          <!--class="com.tutorialspoint.HiWorld"-->
+          <!--init-method="init" destroy-method="destroy">-->
+        <!--&lt;!&ndash;<property name="message" value="Hello World!"/>&ndash;&gt;-->
+    <!--</bean>-->
+
+    <!--<bean id="helloIndia" class="com.tutorialspoint.HelloIndia" parent="helloWorld">-->
+        <!--<property name="message1" value="Hello India!"/>-->
+        <!--<property name="message3" value="Namaste India!"/>-->
+    <!--</bean>-->
+
+    <!-- Definition for textEditor bean -->
+    <bean id="textEditor" class="com.tutorialspoint.TextEditor">
+        <constructor-arg ref="spellChecker"/>
+    </bean>
+
+    <!-- Definition for spellChecker bean -->
+    <bean id="spellChecker" class="com.tutorialspoint.SpellChecker">
+    </bean>
+
+    <!--<bean class="com.tutorialspoint.InitHelloWorld" />-->
+
+
+
+</beans>
